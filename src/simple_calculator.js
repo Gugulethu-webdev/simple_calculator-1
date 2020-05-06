@@ -1,17 +1,23 @@
-function add(...a){
-    var total=0;
-    for(var i=0;i<a.length;i++)
-    total +=a[i]
-    return total;
+function add(...parameters){
+    var sum =0;
+    for(var i=0; i <parameters.length; i++){ 
+     sum += parameters[i];
+    }
+     return sum ;
 }
     
+
+    
         
-function multiply(...a){
-    var total=1;
-    for(var i=0;i<a.length;i++)
-    total *=a[i]
-    return total;
+function multiply(...parameters){
+    var product = 1;
+    for(var i=0;i<parameters.length;i++){ 
+    product *=parameters[i];
+    }
+    return product;
 }
+  
+    
     module.exports = { add, multiply }          
                 
             
